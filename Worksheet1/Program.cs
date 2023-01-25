@@ -7,7 +7,7 @@
         static int[] integers = { 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 52, 52, 53, 54, 55, 56, 57, 58, 59 };
         static void Main(string[] args)
         {
-            PrintIntegersDo();
+            PrintExcludingFor();
         }
         // method for a for loop
         static private void PrintIntegersFor()
@@ -40,6 +40,19 @@
             }
             while(i<integers.Length);
 
+        }
+        // method for a for loop excluding 46 and 48
+        static private void PrintExcludingFor()
+        {
+            for(int i=0; i<integers.Length;i++)
+            {
+                if(i != 46 && i != 48)
+                {
+                    Console.WriteLine(integers[i]);
+                    
+                }
+            }
+            
         }
     }
 }
