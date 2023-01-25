@@ -7,7 +7,7 @@
         static int[] integers = { 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 52, 52, 53, 54, 55, 56, 57, 58, 59 };
         static void Main(string[] args)
         {
-            PrintIntegersWhile();
+            PrintIntegersDo();
         }
         // method for a for loop
         static private void PrintIntegersFor()
@@ -32,6 +32,13 @@
         // method for a do while loop
         static private void PrintIntegersDo()
         {
+            int i = 0;
+            do
+            {
+                Console.WriteLine(integers[i]);
+                i++;
+            }
+            while(i<integers.Length);
 
         }
     }
