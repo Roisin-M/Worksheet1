@@ -13,6 +13,10 @@
 
         static void Main(string[] args)
         {
+            PrintExcludingFor();
+            PrintIntegersWhile();
+            PrintIntegersDo();
+            PrintExcludingFor();
             PrintDescendingOrder();
         }
         // method for a for loop A
