@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            PrintTriangleGeneral();
+            PrintTriangleGeneralCharacter();
         }
         //A method to print one "#" at a time (a)
         static private void PrintTriangle()
@@ -55,7 +55,7 @@
              * */
 
         }
-        // write a method to print hashtag pattern an inputted number of times
+        // write a method to print hashtag pattern an inputted number of times (c)
         static private void PrintTriangleGeneral()
         {
             Console.Write("Enter a number: ");
@@ -66,6 +66,32 @@
                 for (int j = 1; j <= i; j++)
                 {
                     Console.Write("# ");
+                }
+                Console.WriteLine();
+            }
+        }
+        /*(d) d)	Write another method PrintTriangleGeneralCharacter which takes an integer
+         * and a character as parameters and prints the pattern with the number of rows of
+         * the entered character which was input. If you call the method with the arguments,
+         * 5, ‘#’ you should get the pattern from a) above.
+         * */
+        static private void PrintTriangleGeneralCharacter()
+        {
+            int integer;
+            char character;
+
+            // get inout from user to creat pattern
+            Console.Write($"{"Enter the character you would like to print: "}",-40);
+            character = char.Parse(Console.ReadLine());
+            Console.Write($"{"Enter the number of times you would like the pattern to repeat: ",-40}");
+            integer= int.Parse(Console.ReadLine());
+
+            //loop
+            for (int i = 0; i <= integer; i++)
+            {
+                for (int j = 1; j <= i; j++)
+                {
+                    Console.Write(character);
                 }
                 Console.WriteLine();
             }
